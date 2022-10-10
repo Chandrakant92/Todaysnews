@@ -1,0 +1,52 @@
+.Fotter{
+    /* border: solid; */
+    background-color: rgb(11, 11, 137);
+    /* justify-content: center; */
+    
+    margin: 1%;
+    box-shadow: 0 0 20px 6px #090b6f85; 
+}
+.fotp{
+    padding-top: 2%;
+    text-align: center;
+    color: aliceblue;
+    font-size: larger;
+    font-weight: 600;
+}
+.FotterC{
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 5%;
+}
+.FotterC div{
+    margin-left: 5%;
+
+}
+.FontAwesomeIcon{
+    width: 20%;
+    color: white;
+ }
+
+.FotterB{
+    color: aliceblue;
+    text-align: center;
+    padding: 1%;
+background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 450px) {
+     .FotterC{
+        display: block;
+        margin: auto;
+       
+     }
+     .FotterC div{
+       text-align: center;
+     }
+     .FontAwesomeIcon{
+        font-size: medium;
+        width: 10%;
+     }
+
+}

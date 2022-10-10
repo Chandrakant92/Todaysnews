@@ -1,0 +1,164 @@
+.main {
+    color: #191919;
+    background-color: aliceblue;
+    overflow: hidden;
+    padding: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    padding: 2%;
+    box-shadow: 0 0 20px 6px #1d1e7285;
+}
+
+.box1 div {
+    /* border: solid; */
+    margin: 5%;
+    width: fit-content;
+}
+
+.box1 {
+
+    margin: 5%;
+    display: flex;
+
+}
+
+.myimg {
+    border-radius: 50%;
+        animation: rotation infinite 3s alternate-reverse;
+}
+@keyframes rotation{
+    from{
+      transform:rotate(-12deg);
+    }
+  
+    to{
+      transform:rotate(12deg);
+    }
+  }
+
+.box2 {
+    border: solid;
+    border-radius: 20px;
+    margin: 5%;
+    padding: 3%;
+}
+
+.box2 p {
+    font-size: 25px;
+    padding: 2%;
+}
+
+.box3 {
+
+    background: #5643fe;
+    overflow: hidden;
+    text-align: center;
+    margin: 5%;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 6px #090b6f85;
+}
+
+.form label {
+    font-size: larger;
+    font-weight: 600;
+    /* text-align: left; */
+}
+
+.d1 {
+    display: flex;
+    margin-top: 3%;
+    justify-content: center;
+}
+
+.name {
+    font-size: 20px;
+    border: none;
+    background-color: #19191900;
+    outline: none;
+    font-weight: 500;
+    border-bottom: 2px solid #000000;
+}
+
+.btn {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.button {
+    cursor: pointer;
+    margin-bottom: 3%;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 35px;
+    border-radius: 50px;
+    /* display:inline-block; */
+    border: 0;
+    outline: 0;
+    box-shadow: 0px 4px 20px 0px #00000085;
+    background-image: linear-gradient(135deg, #2b79ee 10%, #00008b 80%);
+
+}
+
+.contact {
+    font-weight: bolder;
+    font-size: 20px;
+
+}
+
+.bio p {
+    font-size: 25px;
+    padding: 2%;
+    font-weight: 500;
+}
+
+.bio h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .bio p {
+        margin: auto;
+        font-size: medium;
+    }
+
+    .bio h3 {
+        font-size: larger;
+    }
+
+    .box2 p {
+        font-size: medium;
+        padding: 2%;
+    }
+
+    .box1 {
+        display: block;
+        width: auto;
+    }
+
+    .box1 div {
+        /* border: solid; */
+        margin: 7%;
+        width: auto;
+    }
+    
+}
+@media screen and (max-width: 470px) {
+    .d1 {
+        display: inline-block;
+       
+        padding: 2%;
+        text-align: left;
+        }
+    .button{
+        padding: 10px;
+        font-size: small;
+    }
+    .form label {
+        font-size: medium;
+        }
+        
+}
