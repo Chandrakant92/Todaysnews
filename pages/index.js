@@ -43,7 +43,7 @@ export default function Home() {
           </p>
           <div className={styles.allimg}>
             <div>
-              <a href="https://indianexpress.com/" target="_blank">
+              <a href="https://indianexpress.com/" rel="noreferrer" target="_blank">
                 <Image className={styles.imagess}
                   src={Pic1}
                   alt="Picture of the News"
@@ -53,7 +53,7 @@ export default function Home() {
             </div>
 
             <div>
-              <a href="https://zeenews.india.com/live-tv" target="_blank">
+              <a href="https://zeenews.india.com/live-tv" rel="noreferrer" target="_blank">
                 <Image className={styles.imagess}
                   src={Pic2}
                   alt="Picture of the News"
@@ -64,7 +64,7 @@ export default function Home() {
 
             <div  >
 
-              <a href="https://news.google.com/topstories?hl=en-IN&gl=IN&ceid=IN:en" target="_blank">
+              <a href="https://news.google.com/topstories?hl=en-IN&gl=IN&ceid=IN:en" rel="noreferrer" target="_blank">
                 <Image className={styles.imagess}
                   src={Pic3}
                   alt="Picture of the News"
