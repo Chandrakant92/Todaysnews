@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
        })
        
   })
-  return <>
+  return <div>
   <LoadingBar
         color='#0a29bd'
         progress={progress}
@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }) {
     <Navbar/>
    <Component {...pageProps} />
     <Fotter/>
-  </>
+  </div>
   
  
 }

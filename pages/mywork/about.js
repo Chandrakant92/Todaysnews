@@ -4,8 +4,16 @@ import Pic from '../../Images/220367988.jpg'
 // import Img from '../../Images/R.'
 
 const About = () => {
+  const text = `BIOGRAPHY`;
+  const text1 = `I'm a Chandrakant J Gawali, Intermediate FullStack-Developer, I construct many Web-Application as well as Mobile Application from the scratch. That are helpful to society along with user-friendly interface.            `;
+  const text2 = ` I have created this news website site to preserve human beings knowledgeable so that humans can remain up to date and additionally hold up with the area and understand the present day happenings in the world.
+  I used NextJs which is React framework for this website and I constructed this website totally from scratch.
+  <br/>
+  I hope this website will be beneficial for you, regard for visiting this website
+  Thank you.`;
   return (
     <>
+
       {/* <h3>Hey I am About</h3> */}
       <div className={styles.main}>
 
@@ -20,20 +28,16 @@ const About = () => {
           </div>
           <div className={styles.bio}>
 
-            <h3>BIOGRAPHY</h3>
+            <h3>{text}</h3>
             <p>
-              I'm a Chandrakant J Gawali, Intermediate FullStack-Developer, I construct many Web-Application as well as Mobile Application from the scratch. That are helpful to society along with user-friendly interface.            </p>
+              {text1}</p>
 
           </div>
         </div>
         <hr/>
         <div className={styles.box2}>
           <p>
-            I have created this news website site to preserve human beings knowledgeable so that humans can remain up to date and additionally hold up with the area and understand the present day happenings in the world.
-            I used NextJs which is React framework for this website and I constructed this website totally from scratch.
-            <br/>
-            I hope this website will be beneficial for you, regard for visiting this website
-            Thank you.
+           {text2}
           </p>
         </div>
 

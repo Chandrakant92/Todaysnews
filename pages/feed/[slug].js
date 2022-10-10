@@ -1,12 +1,12 @@
 import styles from '../../styles/slug.module.css'
 import { useRouter } from 'next/router';
 import { redirect } from 'next/dist/server/api-utils';
-
+import Image from 'next/image';
 const Feed = ({ pageNumber, articles }) => {
   console.log(articles, pageNumber);
   const router = useRouter();
   return (
-    <>
+    <div>
       <div className={styles.container}>
         <div className={styles.title}> <h3>Todays News Hedline</h3></div>
         {
@@ -14,7 +14,11 @@ const Feed = ({ pageNumber, articles }) => {
             <div key={index} className={styles.post}>
               <h2 className={styles.Heading} onClick={() => window.location.href = articles.url}>{articles.title}</h2>
               <p className={styles.description}>{articles.description}</p>
-              {!!articles.urlToImage && <img className={styles.img} src={articles.urlToImage} />}
+              {!!articles.urlToImage && 
+              <img className={styles.img} 
+              src={articles.urlToImage} 
+               alt="Picture of the News"
+               layout="fill"/>}
             </div>
           ))
         }
@@ -39,7 +43,7 @@ const Feed = ({ pageNumber, articles }) => {
           }} className={styles.btnN}>Next</button>
       </div>
       </div>
-    </>
+    </div>
 
   )
 }

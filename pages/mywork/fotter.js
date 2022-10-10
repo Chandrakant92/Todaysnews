@@ -4,15 +4,20 @@ import { faYoutube, faLinkedin, faGithub, faGoogle } from '@fortawesome/free-bra
 import styles from '../../styles/fotter.module.css'
 
 export const Fotter = () => {
+    const text = ` Follow Us For More`;
+    const text1 = ` © 2022 Copyright: `;
+    const text2 = ` Today'sNews.com `;
+    const text3 = ` All Rights Reserved`;
     return (
         <>
+             
             <div className={styles.Fotter}>
                 <div className={styles.fotp}>
-                    Follow Us For More
+                    {text}
                 </div>
                 <div className={styles.FotterC}>
                     <div className={styles.icon1}>
-                        <a href="https://www.google.com/" target="_blank">
+                        <a href="https://www.google.com/" rel="noreferrer"  target="_blank">
                             <FontAwesomeIcon className={styles.FontAwesomeIcon}
                                 icon={faGoogle}
                                 // style={{ fontSize: 55, color: "white" }}
@@ -20,7 +25,7 @@ export const Fotter = () => {
                         </a>
                     </div>
                     <div className={styles.icon2}>
-                        <a href="https://www.youtube.com/" target="_blank">
+                        <a href="https://www.youtube.com/" rel="noreferrer"  target="_blank">
                             <FontAwesomeIcon className={styles.FontAwesomeIcon}
                                 icon={faYoutube}
                                 // style={{ fontSize: 55, color: "white" }}
@@ -28,7 +33,7 @@ export const Fotter = () => {
                         </a>
                     </div>
                     <div className={styles.icon3}>
-                        <a href="https://www.linkedin.com/" target="_blank">
+                        <a href="https://www.linkedin.com/" rel="noreferrer"  target="_blank">
                             <FontAwesomeIcon className={styles.FontAwesomeIcon}
                                 icon={faLinkedin}
                                 // style={{ fontSize: 55, color: "white" }}
@@ -36,7 +41,7 @@ export const Fotter = () => {
                         </a>
                     </div>
                     <div className={styles.icon4}>
-                        <a href="https://github.com/" target="_blank">
+                        <a href="https://github.com/" rel="noreferrer"  target="_blank">
                             <FontAwesomeIcon className={styles.FontAwesomeIcon}
                                 icon={faGithub}
                                 // style={{ fontSize: 55, color: "white" }}
@@ -46,9 +51,9 @@ export const Fotter = () => {
                 </div>
                      <hr></hr>
                 <div className={styles.FotterB}>
-                    © 2022 Copyright: 
-                    <a class="text-white" href="https://Today'sNews.com/"> Today'sNews.com  </a>
-                    All Rights Reserved
+                    {text1}
+                    <a className={styles.textwhite} href="https://Today'sNews.com/"> {text2} </a>
+                    {text3}
                 </div>
             </div>
         </>
