@@ -1,8 +1,6 @@
 import { useRouter } from "next/router"
 import styles from '../../styles/nav.module.css';
-// import Link from 'next/link'
-// import styles from '../styles/nav.module.css'
-// import About from './mywork/about'
+
 
 
 export const Navbar = () => {

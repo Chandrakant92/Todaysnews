@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import { redirect } from 'next/dist/server/api-utils';
 import Image from 'next/image';
 const Feed = ({ pageNumber, articles }) => {
+// eslint-disable-next-line no-console
   console.log(articles, pageNumber);
   const router = useRouter();
   return (
@@ -25,6 +26,7 @@ const Feed = ({ pageNumber, articles }) => {
      
       <div className={styles.conB}>
         <button onClick={() => {
+          // eslint-disable-next-line no-console
           console.log(`/feed/${pageNumber - 1}`);
           if (pageNumber > 1 && pageNumber>-1) {
             router.push(`/feed/${pageNumber - 1}`)
@@ -36,6 +38,7 @@ const Feed = ({ pageNumber, articles }) => {
 
         <button
           onClick={() => {
+            // eslint-disable-next-line no-console
             console.log(`/feed/${pageNumber++}`);
             if (pageNumber > 1) {
               router.push(`/feed/${pageNumber++}`)
