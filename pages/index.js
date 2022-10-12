@@ -62,7 +62,7 @@ export default function Home() {
                 />
             {p2}
               </a>
-              <button className={styles.middle} onClick={() => window.open('https://indianexpress.com/') }>  {p3}</button>
+              <button className={styles.middle} onClick={() => window.open('https://indianexpress.com/') }>  {text3}</button>
             </div>
 
             <div>
@@ -73,7 +73,7 @@ export default function Home() {
                 />
                 {p1}
               </a>
-              <button className={styles.middle} onClick={() => window.open('https://zeenews.india.com/live-tv') }>  {p3}</button>
+              <button className={styles.middle} onClick={() => window.open('https://zeenews.india.com/live-tv') }>  {text3}</button>
             </div>
 
             <div  >
@@ -95,9 +95,6 @@ export default function Home() {
 
   )
 }
-
-
-
 
 
 

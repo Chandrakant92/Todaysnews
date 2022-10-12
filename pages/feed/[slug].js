@@ -2,9 +2,13 @@ import styles from '../../styles/slug.module.css'
 import { useRouter } from 'next/router';
 import { redirect } from 'next/dist/server/api-utils';
 import Image from 'next/image';
-const Feed = ({ pageNumber, articles }) => {
+
+
+
+const Feed = ({ pageNumber, articles,props}) => {
 // eslint-disable-next-line no-console
   console.log(articles, pageNumber);
+  console.log(props);
   const router = useRouter();
   return (
     <div>

@@ -19,5 +19,5 @@ export const Navbar = () => {
     </>
   )
 }
-
+export default Navbar
 // window.location.href="https://Goggle.com"

@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import your icons
+import react from "react";
 import { faYoutube, faLinkedin, faGithub, faGoogle } from '@fortawesome/free-brands-svg-icons';
 import styles from '../../styles/fotter.module.css'
 
@@ -60,4 +60,4 @@ export const Fotter = () => {
     )
 }
 
-// export default Fotter
+export default Fotter
