@@ -11,7 +11,7 @@ import { useRouter } from "next/router"
 
 export default function Home() {
   const heading = `Today's News`;
-  const text = `Welcome To Today's Website`;
+  const text = `Welcome To Today's News`;
   const text1 = `News is important for a number of reasons within a society. Mainly to inform the public about events that are around them and may affect them..!`;
   const text2 = `  News is that part of communication that keeps us informed of the changing events, issues, and characters in the world outside. Though it may be interesting or even entertaining, the foremost value of news is as a utility to empower the informed....!!`;
   const p2 = `According to the survey, Newspaper reaches 30% of the India's population people watches the news  `;
