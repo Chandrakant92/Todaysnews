@@ -71,7 +71,7 @@ export const getServerSideProps = async pageContext => {
     `https://newsapi.org/v2/top-headlines?country=in&pageSize=5&page=${pageNumber}`,
     {
       headers: {
-        Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,
+        Authorization: `Bearer e98404a1b2b6492f8021afd014822b4f`,
       },
     },
   );
